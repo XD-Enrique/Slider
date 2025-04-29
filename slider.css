@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Tangerine:wght@400;700&display=swap');
+.tangerine-regular {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+body {
+
+    background-color: #191970;
+}
+
+h1 {
+    color: antiquewhite;
+    font-family: "Tangerine", sans-serif;
+    font-size: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+#fotos-container {
+    position: relative; 
+    margin: 40px 0; 
+    overflow: hidden; 
+}
+
+
+#fotos {
+    overflow-x: scroll; 
+    white-space: nowrap;
+    padding: 20px 0;
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Oculta a barra de rolagem para navegadores WebKit */
+#fotos::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilização das imagens - ampliadas */
+#fotos img {
+    display: inline-block;
+    height: 400px; /* Aumenta a altura das imagens */
+    margin: 0 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover nas imagens */
+#fotos img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilização das flechas */
+
+.material-icons {
+    font-size: 36px;
+}
+
+.arrow {
+   
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 101;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+/* Efeito hover nas flechas */
+.arrow:hover {
+    background-color: rgb(250,235,215, 0.8);
+}
+
+/* Posicionamento da flecha esquerda */
+.arrow.left {
+    left: 10px;
+}
+
+/* Posicionamento da flecha direita */
+.arrow.right {
+    right: 10px;
+}

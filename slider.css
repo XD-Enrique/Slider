@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Tangerine:wght@400;700&display=swap');
+
 .tangerine-regular {
     font-family: "Tangerine", cursive;
     font-weight: 400;
@@ -40,30 +41,30 @@ h1 {
     overflow-x: scroll; 
     white-space: nowrap;
     padding: 20px 0;
-    -ms-overflow-style: none;  /* IE e Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
 
-/* Oculta a barra de rolagem para navegadores WebKit */
+
 #fotos::-webkit-scrollbar {
     display: none;
 }
 
-/* Estilização das imagens - ampliadas */
+
 #fotos img {
     display: inline-block;
-    height: 400px; /* Aumenta a altura das imagens */
+    height: 400px; 
     margin: 0 15px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-/* Efeito hover nas imagens */
+
 #fotos img:hover {
     transform: scale(1.05);
 }
 
-/* Estilização das flechas */
+
 
 .material-icons {
     font-size: 36px;
@@ -85,17 +86,17 @@ h1 {
     transition: background 0.3s ease;
 }
 
-/* Efeito hover nas flechas */
+
 .arrow:hover {
     background-color: rgb(250,235,215, 0.8);
 }
 
-/* Posicionamento da flecha esquerda */
+
 .arrow.left {
     left: 10px;
 }
 
-/* Posicionamento da flecha direita */
+
 .arrow.right {
     right: 10px;
 }
